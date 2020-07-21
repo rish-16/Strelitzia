@@ -1,0 +1,10 @@
+At least one other commercial DNS provider who uses Cloudflare in front of their own nameservers for DDoS mitigation also went off the air.
+We’re familiar with Cloudflare’s DDoS service for DNS providers, because we use it ourselves .
+Fortunately easyDNS was not impacted by the outage (I didn’t even notice it, tbh), and I only heard about it later in the day when I checked in on social media at some point and saw all this chatter about “half the internet blowing up”.
+I think somewhere in my book I wrote “DNS providers have a near-pathological aversion to SPOFs” (Single Point of Failures).
+This is why whenever one of the largest DNS providers in the world blows themselves up, or gets DDoSed off of the air we are quick to point out two things:
+At easyDNS we experienced so much pain from this reality that we created a system to automate flipping DNS providers at the first sign of trouble.
+Again, from my book , even a single unicast node staying up when all else is down will get you through a major network event like this unscathed.
+That works best most of the time, so then you want to go with an active/passive model that will step back when things are going according to plan, and then when these periodic network cataclysms do occur (and they will), they step into the breach and update your nameservers so that you at least stay up until the crisis is over.
+If for some unfathomable reason we aren’t your preferred DNS vendor, you can stick with one who is and just transfer your domain here.
+Learn more here (including pricing) or check out the original Proactive DNS explainer video….

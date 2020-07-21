@@ -1,0 +1,10 @@
+As we’ve been informing via the @TwitterSupport account, on Wednesday, July 15, 2020, we detected a security incident at Twitter and took immediate action.
+Additionally, as the investigation of this incident is unfolding, there are some details — particularly around remediation — that we are not providing right now to protect the security of the effort.
+In this context, social engineering is the intentional manipulation of people into performing certain actions and divulging confidential information.
+The attackers successfully manipulated a small number of employees and used their credentials to access Twitter’s internal systems, including getting through our two-factor protections.
+We became aware of the attackers’ action on Wednesday, and moved quickly to lock down and regain control of the compromised accounts.
+In addition to our efforts behind the scenes, shortly after we became aware of the ongoing situation, we took preemptive measures to restrict functionality for many accounts on Twitter - this included things like preventing them from Tweeting or changing passwords.
+We are continuing our investigation of this incident, working with law enforcement, and determining longer-term actions we should take to improve the security of our systems.
+We have multiple teams working around the clock focused on this and on keeping the people who use Twitter safe and informed.
+Attackers were able to view personal information including email addresses and phone numbers, which are displayed to some users of our internal support tools.
+We hope that our openness and transparency throughout this process, and the steps and work we will take to safeguard against other attacks in the future, will be the start of making this right.

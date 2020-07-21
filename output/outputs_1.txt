@@ -1,0 +1,10 @@
+Summary: I share my early experiments with OpenAI's new language prediction model (GPT-3) beta.
+OpenAI, a non-profit artificial intelligence research company backed by Peter Thiel, Elon Musk, Reid Hoffman, Marc Benioff, Sam Altman and others, released its third generation of language prediction model (GPT-3) into the open-source wild.
+Language models allow computers to produce random-ish sentences of approximately the same length and grammatical structure as those in a given body of text.
+I imagine that similar results can be obtained by republishing GPT-3’s outputs to other message boards, blogs, and social media.
+I further predict that this will spark a creative gold rush among talented amateurs to train similar models and adapt them to a variety of purposes, including: mock news, “researched journalism”, advertising, politics, and propaganda.
+I chose bitcointalk.org as the target environment for my experiments for a variety of reasons: It is a popular forum with many types of posts and posters.
+I was recently watching a podcast about how OpenAI built their latest language model and it made me wonder what could be done with a system like this.
+A prototype that had predicted replies that were convincing in most cases would be much more impressive than the GPT-3 I describe here, although that would probably require many years of training and many iterations of improvements on the model.
+and then just copied what the model generated verbatim with minor spacing and formatting edits (no other characters were changed).
+I generated different results a couple (less than 10) times until I felt the writing style somewhat matched my own, and published it.

@@ -1,0 +1,10 @@
+I didn't want my content hosted on YouTube where it would be surrounded on all sides by an infinite expanse of flaming garbage.
+But when my renewal email arrived in April, myself and other small developers were seeing sales slow down as the pandemic worsened.
+But at my tiny scale and thinking about cutting costs, given the amount of video content I'm actually posting each month and hosting with them, and also being a huge nerd, it didn't make sense any longer.
+I have zero understanding of how bandwidth is actually priced globally between providers or why some companies charge such a premium compared to others for the same bits over the wire.
+It's a wonderful open source player from the kind folks at Brightcove that provides a similar level of control as the point and click customization options that Vimeo offers.
+BunnyCDN offers their own online storage zones that you can simply upload to via FTP, but for historical reasons, I still store my large app downloads and videos on S3 and then have Bunny (and previously MaxCDN) pull from AWS as an origin server.
+I just pass my video's filename to that script, and a few minutes later I can copy and paste the output into my text editor and make it available on my website.
+You'll of course want to modify the paths to make it work with your own setup since it's completely specific to my needs right now.
+On average, my bandwidth bill is about $11/month - and that includes videos, static assets, and ALSO binary downloads for all of my Mac apps.
+It's definitely a geekier solution that requires more work up front to setup, and I'm not sure I would recommend it for a "real" business, but for my needs it was a fun project and I'm happy to save $200 a year.

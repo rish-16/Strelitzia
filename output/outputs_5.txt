@@ -1,0 +1,14 @@
+Even though the issue is trivial to reproduce, I couldn’t look into it for the longest time for a simple reason – I don’t have access to any PCs with AMD hardware!
+Thankfully, this time I’m not approaching research alone – Rafael Rivera got my back during the entire process of R&D,
+providing a test environment with an AMD chip, insights, ideas as well as putting up with hundreds of blind guesses I usually throw around when trying to find the way to the root of such unknown problems.
+When this started looking like an undebuggable case, Rafael came back to me with a realization – disabling PSGP (Processor Specific Graphics Pipeline) fixes the issue and the characters are properly lit!
+PSGP is not the best documented term, but in short, it’s a legacy (concerning only older DirectX versions) feature allowing Direct3D to perform processor-specific optimizations:
+An in-game test replacing NaN values with zeros partially fixed the issue – ugly black blobs disappeared, but characters were still way too dark:
+Sadly, any attempt to track down the origin of these constants pointed towards something resembling a render thread and not the real place of submission.
+While not undebuggable, it’s clear that we needed to try a fresh approach before potentially spending an infinite amount of time following the data flow between game-specific
+and/or UE3-specific structures.
+Looking at the list, if I approached it without prior knowledge gained from the captures I would have expected D3DXPreprocessShader or D3DXCompileShader to be possible culprits – shaders
+could be wrongly optimized and/or compiled on AMD, but fixing that could be insanely challenging.
+We have decided that the cleanest way to fix this issue is to provide a replacement d3dx9_31.dll , which forwards every function exported by Mass Effect
+to the system DLL, except for D3DXMatrixInverse .
+A replacement DLL makes for a very clean and bulletproof installation, and it’s been confirmed to work fine with both Origin and Steam versions of the game.
